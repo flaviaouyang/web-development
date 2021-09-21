@@ -1,0 +1,35 @@
+@media (min-width:1000px){
+    body{
+        background:red;
+    }
+}
+.thin_border{
+    border:1px solid black;
+}
+
+body {
+    color: rgb(231, 182, 48);
+}
+
+a{
+    color:rgb(0, 0, 0);
+}
+
+a:hover{
+    color:black;
+    background:white;
+
+}
+
+h1{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', 
+    Arial, sans-serif;
+}
+
+.indent {
+    margin-left: 100px;
+}
+
+.gap_below {
+    margin-bottom: 100px;
+}
