@@ -1,6 +1,5 @@
 # Odin-Project
 ## This repository is for the purpose of learning web development with Odin-Project.
-- - -
 ## Notes
 ## CSS
 * Basic syntax: selector, property and value;![](assets/Screen%20Shot%202021-11-04%20at%209.21.09%20PM.png)
