@@ -8,5 +8,13 @@
 <h1 id="title" onclick="alert('hello');">Hello</h1>
 ```
 
-- 
+## Manipulating HTML elements
+
+- JQuery
+
+  ```javascript
+  $(''#title').html('Goodbye');
+  ```
+
+  
 
