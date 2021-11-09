@@ -33,5 +33,17 @@
 </script>
 ```
 
+## Anonymous functions
+
+```javascript
+function sayGoodbye(){
+	$("#title").html("Goodbye");
+	$("#title").click(function(){
+		$("#title").html("Hello");
+		$("#title").off("click");
+	});
+}
+```
+
 
 
