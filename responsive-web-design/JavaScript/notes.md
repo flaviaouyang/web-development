@@ -13,8 +13,25 @@
 - JQuery
 
   ```javascript
-  $(''#title').html('Goodbye');
+  $('#title').html('Goodbye');
+  Script Tag
   ```
 
-  
+## Script Tag
+
+```html
+<body>
+  <h1 onclick="sayHello();">
+    Hello
+  </h1>
+</body>
+
+<script type="text/javascript">
+	function sayHello(){
+    alert('hello');
+  };
+</script>
+```
+
+
 
