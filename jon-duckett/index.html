@@ -43,27 +43,38 @@
     </table>
     <br>
     <table>
-        <tr>
-            <th>
-                <!-- heading of the table -->
-                Growth
-            </th>
-            <th scope="col">first</th>
-            <th scope="col">second</th>
-            <th scope="col">third</th>
-        </tr>
-        <tr>
-            <th scope="row">control</th>
-            <td>55</td>
-            <td>129</td>
-            <td>345</td>
-        </tr>
-        <tr>
-            <th scope="row">SCG</th>
-            <td>100</td>
-            <td>31</td>
-            <td>66</td>
-        </tr>
+        <thead>
+            <!-- heading of the table should sit inside here -->
+            <tr>
+                <th>
+                    <!-- heading of column or row -->
+                </th>
+                <th scope="col">first</th>
+                <th scope="col">second</th>
+                <th scope="col">third</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- body of the table -->
+            <tr>
+                <th scope="row">control</th>
+                <td>55</td>
+                <td>129</td>
+                <td>345</td>
+            </tr>
+            <tr>
+                <th scope="row">SCG</th>
+                <td>100</td>
+                <td>31</td>
+                <td>66</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>today</td>
+        </tfoot>
     </table>
 </body>
 
