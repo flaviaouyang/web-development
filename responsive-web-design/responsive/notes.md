@@ -2,7 +2,7 @@
 
 ## Usability and user experience
 
-- **Usability**: about how usable a website is:
+- **Usability**: about how usable a website is:
   - efficient
   - memorable
   - learnable
