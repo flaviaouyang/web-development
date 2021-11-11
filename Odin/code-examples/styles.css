@@ -19,5 +19,12 @@
 
 .box-two {
     background-color: plum;
-    border: 0px solid orange;
+    border: 20px solid orange;
+    padding: 40px;
+    margin: 60px;
+    /* margin collapses between two elements */
+    /* there won't be a 120px distance between box one and two, only 60px */
+    /* the distance will be the larger padding */
+    height: 100px;
+    width:200px;
 }
