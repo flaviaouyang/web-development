@@ -76,6 +76,96 @@
             <td>today</td>
         </tfoot>
     </table>
-</body>
+
+    <!-- forms -->
+    <!-- form element should always carry action attribute -->
+    <form action="#" method="get">
+        <!-- value of the action attribute: 
+            URL for the page 
+            on the server that will 
+            receive the information
+        in the form when submitted -->
+        <!-- get method: values added to the end (DEFAULT)-->
+        <!-- post method: sent in HTTP headers`  -->
+        <p>Username:
+            <input type="text" name="username" size="15" maxlength="30" />
+            <!-- type attribute -->
+            <!-- name attribute: form control requires it -->
+            <!-- maxlength: limit number of character a user can enter -->
+            <!-- size: not used on new forms -->
+        </p>
+    </form>
+
+    <!-- password input -->
+    <form action="#">
+        <p>Password:
+            <input type="password" name="password" size="15" maxlength="30" />
+        </p>
+    </form>
+
+    <!-- text area -->
+    <form action="#">
+        <p>What do you think of Socrates?</p>
+        <textarea name="comments" cols="20" rows="4">Enter your thoughts here...
+        </textarea>
+    </form>
+
+    <!-- radio button -->
+    <form action="#">
+        <p>Select the correct option:</p>
+        <input type="radio" name="correct" value="22" checked="checked" />
+            22
+        <input type="radio" name="correct" value="30" />
+            30
+    </form>
+
+    <!-- checkbox -->
+    <form action="#">
+        <p>Select your preferred time: </p>
+        <input type="checkbox" name="time" value="Friday" checked /> Friday
+        <input type="checkbox" name="time" value="Sat" /> Saturday
+        <input type="checkbox" name="time" value="Thursday" /> Thursday
+    </form>
+
+    <!-- dropdown list box -->
+    <form action="#">
+        <p>Who is your favorite?</p>
+        <select name="person">
+            <option value="Fletcher">Fletcher</option>
+            <option value="Girl in Red">Girl in Red</option>
+            <option value="Phoebe Bridgers">Phoebe Bridgers</option>
+        </select>
+    </form>
+
+    <!-- Multiple select box -->
+    <form action="#">
+        <p>Are you familiar with any of the following artists?</p>
+        <select name="artist" size="3" multiple>
+            <option value="St.Vincent" selected>St.Vincent</option>
+            <option value="Finneas">Finneas</option>
+            <option value="Adele">Adele</option>
+        </select>
+    </form>
+
+    <!-- file input box -->
+    <form action="#" method="post">
+        <p>Upload your assignment: </p>
+        <input type="file" name="homework">
+        <br>
+        <input type="submit" value="upload">
+    </form>
+
+    <!-- image button -->
+    <form action="#">
+        <p>Subscribe to my newsletter.</p>
+        <input type="text" name="email">
+        <input type="image" src="images/interface/subscribe.png" width="100" height="auto">
+    </form>
+
+    <!-- Button & Hidden Controls -->
+    <form action="#">
+        <button><img src="images/interface/Add.png" alt="add" width="30" height="auto">Add</button>
+        <input type="hidden" name="bookmark" value="lyrics">
+    </form>
 
 </html>
