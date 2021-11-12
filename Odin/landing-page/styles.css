@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+}
+header > ul{
+    background-color: #5099f4;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+header > ul >li {
+    display: inline;
+}
+
+header > ul > div > li{
+    display: inline;
+    margin-right: 10px;
+}
+
+.top {
+    width: 50px;
+    height: auto;
+}
