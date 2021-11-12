@@ -35,26 +35,40 @@ img, p, h2 {
     font-family: 'Road Rage', cursive;
     grid-row-start: 1;
     grid-row-end: 2;
-    padding-left: 30px;
+    /* padding-left: 30px; */
     color: white;
+    text-align: center;
 }
 
 .grid-item2 {
     font-size: 18px;
-    grid-column-start: 2;
-    grid-column-end: 15;
-    padding-right: 30px;
+    grid-row-start: 3;
+    grid-row-end: 6;
+    /* padding-right: 30px; */
     font-family: "JetBrains Mono",monospace;
     text-align: center;
     color: white;
+    margin-left: 20px;
 }
 
 .grid-item3 {
+    grid-row-start: 7;
+    grid-row-end: 8;
+    justify-self: center;
+    /* padding-right: 30px; */
+}
+
+.grid-item4 {
+    grid-row-start: 1;
+    grid-row-end: 8;
     grid-column-start: 2;
-    grid-column-end: 15;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    padding-right: 30px;
+    grid-column-end: 3;
+    padding: 20px;
+}
+
+.picture {
+    width: 720px;
+    height: auto;
 }
 
 .button-30 {
@@ -68,8 +82,8 @@ img, p, h2 {
     color: #36395A;
     cursor: pointer;
     display: inline-flex;
-    /* font-family: "JetBrains Mono",monospace; */
-    font-family: 'Road Rage', cursive;
+    font-family: "JetBrains Mono",monospace;
+    /* font-family: 'Road Rage', cursive; */
     height: 48px;
     justify-content: center;
     line-height: 1;
@@ -87,6 +101,8 @@ img, p, h2 {
     white-space: nowrap;
     will-change: box-shadow,transform;
     font-size: 18px;
+    margin-bottom: 20px;
+    margin-left: 20px;
   }
   
   .button-30:focus {
@@ -101,4 +117,28 @@ img, p, h2 {
   .button-30:active {
     box-shadow: #D6D6E7 0 3px 7px inset;
     transform: translateY(2px);
+  }
+
+  .info img {
+      margin: 10px;
+      width: 210px;
+  }
+
+  .container {
+      display: flex;
+      justify-content: space-evenly;
+  }
+
+  .quote {
+      background-color: #E5E7EB;
+      text-align: center;
+      font-size: 36px;
+      font-weight: light;
+      color:#1F2937
+  }
+
+  footer {
+      background-color: #4ABDAC;
+      text-align: center;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
