@@ -1,25 +1,22 @@
 body {
     margin: 0;
 }
-header > ul{
+
+.contain {
     background-color: #5099f4;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
     display: flex;
-    justify-content: space-between;
 }
 
-header > ul >li {
-    display: inline;
-}
-
-header > ul > div > li{
-    display: inline;
-    margin-right: 10px;
-}
-
-.top {
+img {
     width: 50px;
     height: auto;
+    padding: 5px;
+}
+
+.items-1 {
+    flex-grow: 1;
+}
+
+.items-2:hover,.items-3:hover {
+    background-color: #3a73b8;
 }
