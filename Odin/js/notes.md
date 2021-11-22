@@ -115,4 +115,16 @@ const COLOR_GREEN = "#0F0";
 	- but numbers can also be defined as objects with `new` keyword
 	- `let y = new Number(123)`
 
-- 
+- **Arithmetic Operators**
+
+	- `**` exponentiation, same as `Math.pow(x,y)`
+	- `++` increment and `--` decrement
+
+- Useful Number methods
+
+	- `toFixed()`: round number to a fixed number of decimal places
+	- convert string to number: `Number()`
+
+- Unary:
+
+	- 
