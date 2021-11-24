@@ -291,6 +291,31 @@ switch (expression) {
 let greeting = ( isBirthday ) ? 'Happy BDay' : 'cool';
 ```
 
+---
+
+## Functions
+
+## Built-in browser functions
+
+- `replace()` string function takes a source string, and a target string and replaces the source string with the target string, and returns the newly formed string
+
+```javascript
+let myText = 'I am a string';
+let newText = myText.replace('string', 'pizza');
+console.log(newText)
+
+// output: I am a pizza
+```
+
+- `join()` array function takes an array, joins all the array items together into a single string, and returns this new string
+
+```javascript
+let myArray = ['I', 'Love', 'Austyn'];
+let joinString = myArray.join(' ');
+console.log(joinString);
+//output: I love Austyn
+```
+
 
 
 
