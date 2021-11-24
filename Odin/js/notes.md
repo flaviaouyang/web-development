@@ -360,7 +360,54 @@ let anotherGreeting = myGreeting;
 ## Function return values
 
 - Functions without return values, their return value is `void` or `undefined`
-- 
+
+## Default values
+
+- We can specify the so-called *default* value for a parameter in the function declaration using `=`:
+	- default can also be another function
+
+```javascript
+function showMessage(from, text="no text given"){
+    alert(from + ": " + text);
+}
+
+showMessage("Ann");
+//output: Ann: notext given
+```
+
+- **Alternative default parameters**: we can also assign default values for parameters in the function 
+
+```javascript
+//check if the parameter is passed during the function execution by comparing it with undefined
+function showMessage(text){
+//...
+
+	if (text === undefined){
+    	text = 'empty message';
+	}
+    alert(text);
+}
+showMessage();
+
+//or we can use ||
+function showMessage(text){
+//...
+
+	text = text || 'empty';
+    alert(text);
+}
+showMessage();
+
+//or use the nullish coalescing operator ??
+function showCount(count){
+    //if count is undefined or null, show unknown
+    alert(count ?? "unknown");
+}
+showCount();
+showCount(null);
+```
+
+
 
 
 
