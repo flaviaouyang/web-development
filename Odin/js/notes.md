@@ -360,6 +360,8 @@ let anotherGreeting = myGreeting;
 ## Function return values
 
 - Functions without return values, their return value is `void` or `undefined`
+- `return;` without a value will cause the function to exit immediately and return `undefined`
+- never add a newline between `return` and the value
 
 ## Default values
 
@@ -407,15 +409,170 @@ showCount();
 showCount(null);
 ```
 
+## Function expressions
 
+- this is called **Function Declaration**
 
+```javascript
+function sayHi(){
+	aler("Hello");
+}
+```
 
+- This is called a **Function Expression**
 
+```javascript
+let sayHi = function(){
+	alert("Hello");
+};
+```
 
+- We can print out the value of `sayHi` and it will show the function code
+- Do not forget the semicolon at the end
 
+## Callback functions
 
+- pssing functions as values and using function expressions
 
+```javascript
+//write a function ask(question, yes, no)
+//question: text of the question
+//yes: functions to run if yes
+//no, functions to run if no
 
+function ask(question, yes, no){
+    if(confirm(question)) yes()
+    else no();
+}
+
+function showOk(){
+    alert('You agreed.');
+}
+
+function showCancel(){
+    alert('You canceled the execution.');
+}
+
+ask("Do you agree?", showOk, showCancel);
+```
+
+- The arguments `showOk`, `showCancel` are called **callback functions** or just **callbacks**.
+- We can use function expression to write the same function but much shorter.
+
+```javascript
+function ask(question, yes, no){
+    if (confirm(question)) yes()
+    else no();
+}
+
+ask(
+	"Do you agree?",
+    function() {alert("You agreed.");},
+    function() {alert("You canceled the execution.");}
+);
+```
+
+## Function Expression vs Function Declaration
+
+- A function expression is created the execution reaches it and is usable only from that moment
+	- **A functon declaration can be called earlier than it is defined**
+- When a Function declaration is within a code block, it's visible everywhere inside that block but not outside of it.
+	- to combat this, we can use function expression and assign it to a variable that is declared outside of the code block.
+
+## Arrow functions
+
+- Syntax: `let func = (arg1, arg2, .., argN) => expression;`
+	- This creates a function `func` that accepts argument `arg1..argN` then evaluates the `expression` and return a result
+
+```javascript
+//that is equivalent to
+let func = function(arg1, arg2, ..., argN){
+    return expression;
+};
+
+//concrete example
+let sum = function(a, b){
+    return a + b;
+};
+
+//equivalence
+let sum = (a, b) => a + b;
+
+//call the function
+alert(sum(2, 4));
+
+//arrow function with only one parameter, () can be omitted
+let double = n => n * 2;
+
+alert(double(10));
+
+//arrow function with no arguments
+let sayHi = () => alert("Hello!");
+sayHi();
+
+let age = prompt("What is your age?", 18);
+let welcome = (age < 18) ?
+    () => alert('Hello'):
+	() => alert("Greetings!");
+
+welcome();
+```
+
+- Multiline arrow functions: 
+
+```javascript
+let sum = (a, b) => {
+    let result = a + b;
+    return result;
+};
+
+alert(sum(1, 2));
+```
+
+---
+
+## JavaScript Call Stack
+
+- JS engine uses a **call stack** to manage execution contexts: the Global Execution Context and Function Execution Contexts.
+- The call stack works based on the LIFO principle, **last-in-first-out**
+- When a script is executed, the JS engine creates a Global Execution Context and pushes it on top of the call stack
+- When a function is called, the JS engine creates a Function Execution Context for the function and pushes it on top of the Call Stack, and starts executing the function.
+- When a function calls another function, the JS engine creates a new Function Execution Context for the function called and pushes it on top of the call stack.
+- When the current function completes, the JS engine pops it off the call stack and resumes the execution where it left off in the last code listing.
+- Script will strop when the call stack is empty.
+- Global execution context is denoted by `main()` or `global()`
+
+```javascript
+function add(a, b) {
+    return a + b;
+}
+
+function average(a, b) {
+    return add(a, b) / 2;
+}
+
+let x = average(10, 20);
+```
+
+![Screen Shot 2021-11-24 at 1.10.04 PM](/Users/flaviaouyang/Library/Application Support/typora-user-images/Screen Shot 2021-11-24 at 1.10.04 PM.png)
+
+## Stack Overflow
+
+- The call stack has a fixed size, depending on the implementation of the host environment, either the web browser or Node.js
+- If the number of the execution contexts exceeds the size of the stack, a stack overflow will occur.
+
+```javascript
+function foo(){
+    foo();
+}
+
+foo(); // stack overflow
+```
+
+## Asynchronous JavaScript
+
+- JavaScript is the single-threaded programming language. The JS engine has only one call stack so that it only can do one thing at a time.
+- When executing a script, the JS engine executes code from top to bottom, line by line. In other words, it is **synchronous**.
 
 
 
