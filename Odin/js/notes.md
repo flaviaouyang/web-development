@@ -316,7 +316,51 @@ console.log(joinString);
 //output: I love Austyn
 ```
 
+- `Math.random()` function generates a random number between 0 and up to but not including 1, and returns that number
 
+## Functions versus methods
+
+- **Functions** that are part of objects are called **methods**.
+
+```javascript
+function functionName(){
+	// statements go here
+}
+
+functionName();
+//calling the function
+```
+
+## Anonymous functions
+
+```javascript
+//you can create a function that doesn't have a name
+
+function(){
+    alert('hello');
+}
+
+myButton.onlclick = function() {
+    alert('hello');
+}
+```
+
+- An **anonymous function** won't do anything on its own. Generally you use an anonymous function along with an event handler.
+- You can also **assign an anonymous function to be the value of a variable**.
+
+```javascript
+const myGreeting = function() {
+    alert('hello');
+}
+myGreeting();
+// you can assign the function to be the value of multiple variables
+let anotherGreeting = myGreeting;
+```
+
+## Function return values
+
+- Functions without return values, their return value is `void` or `undefined`
+- 
 
 
 
