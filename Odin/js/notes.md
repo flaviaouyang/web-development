@@ -26,6 +26,8 @@
 	</body>
 	</html>
 	```
+	
+- run from command line: `node filename.js`
 
 ---
 
@@ -741,6 +743,50 @@ for (let i = 0; i < 10; i++) {
 ## Test Driven Development (TDD)
 
 - TDD refers to the practice of **writing automated tests that describe how your code should work before actually writing the code**
+
+## The argument object
+
+- Arguments is an Array-like object accessible inside functions that contains the values of the arguments passed to that function.
+	- arguments has a `length` property and is indexed from zero
+
+```javascript
+function func1(a, b, c) {
+    console.log(arguments[0]);
+    console.log(arguments[1]);
+    console.log(arguments[2]);
+}
+```
+
+- `arguments` object is a local variable available within all non-arrow functions
+	- each argument can also be set or reassigned
+- You can convert arguments to an array
+	- `const args = Array.from(arguments);`
+	- `const args = [...arguments];`
+
+## Spread syntax
+
+- `...` allows an iterable such as an array expression or string to be expanded in places where zero or more arguments  or elements are expected, or an object expression to be expanded in places where zero or more key-value pairs are expected.
+
+---
+
+## DOM Manipulation
+
+- DOM (or Document Object Model) is a tree-like representation of the contents of a webpage
+	- a tree of **nodes** with different relationship depending on how they're arranged in the HTML document
+- Targeting nodes with selectors
+- When HTML code is parsed by a browser, it is converted to the DOM
+
+## Query Selectors
+
+- They help us target nodes
+- `element.querySelector(selector)` returns reference to the first match of `selector`
+- `element.querySelectorAll(selectors)` returns a nodelist containing references to all of the matches of the `selectors`
+	- does not return array
+	- Looks like array, acts like array but is *nodelist*
+
+## Element creation
+
+
 
 
 
