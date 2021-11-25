@@ -741,7 +741,6 @@ for (let i = 0; i < 10; i++) {
 ## Test Driven Development (TDD)
 
 - TDD refers to the practice of **writing automated tests that describe how your code should work before actually writing the code**
-- 
 
 
 
