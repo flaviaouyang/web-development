@@ -574,7 +574,17 @@ foo(); // stack overflow
 - JavaScript is the single-threaded programming language. The JS engine has only one call stack so that it only can do one thing at a time.
 - When executing a script, the JS engine executes code from top to bottom, line by line. In other words, it is **synchronous**.
 
+---
 
+## Understanding Errors
+
+- `ReferenceError` when one refers to a variable that is not declared and/or initialized within the current scope.
+- `SyntaxError` when code is not written correctly
+- `TypeError` when
+	- an operand or argument passed to a function is incompatible with the type expected by that opeartor or function
+	- attempting to modify a value that cannot be changed
+	- attempting to use a value in an inappropriate way
+- 
 
 
 
