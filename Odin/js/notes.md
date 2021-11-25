@@ -706,18 +706,42 @@ const fruits = ["Banana", "Orange", "Apple", "Mango"];
 delete fruits[0];
 ```
 
-- `splice()` can add new items to an array
-	- first parameter defines the position where new element(s) should be added
-	- second parameter defines **how many** elements should be **removed**
+- `splice()` can remove or replace existing elements
+	- first parameter defines the index where new element(s) should be added
+	- second parameter defines **how many** elements should be **removed** starting from the beginning
 	- rest of parameters defines the new elements to be added
-	- returns an array with the delted items
+	- returns an array with the deleted items
 
 ```javascript
 const fruits = ["Banana", "Orange", "Apple", "Mango"];
-fruits.spice(2, 0, "Lemon", "Kiwi");
+fruits.splice(2, 0, "Lemon", "Kiwi");
 ```
 
+- `concat()` creates a new array by merging existing arrays
+	- `const array = array1.concat(array2, array3, array4, ..., arrayN);`
+- `slice()` slice out a piece of an array into a new array
+	- it creates a new array
+	- `slice(n)` slices out an array starting from index n
+	- `slice(n, m)` slice out from array[n] to array[m-1]
 
+## Looping 
+
+- **for loop**
+
+```javascript
+for (initializer; condition; final-expression) {
+    //code to run
+}
+
+for (let i = 0; i < 10; i++) {
+    console.log("cool beans");
+}
+```
+
+## Test Driven Development (TDD)
+
+- TDD refers to the practice of **writing automated tests that describe how your code should work before actually writing the code**
+- 
 
 
 
