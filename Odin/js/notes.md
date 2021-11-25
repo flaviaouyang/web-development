@@ -584,7 +584,140 @@ foo(); // stack overflow
 	- an operand or argument passed to a function is incompatible with the type expected by that opeartor or function
 	- attempting to modify a value that cannot be changed
 	- attempting to use a value in an inappropriate way
-- 
+
+---
+
+## Clean Code
+
+- Indentation
+- Semicolons: they are mostly optional in JS because the compile will automatically insert them if omitted. But it is a better practice to add them.
+- Line length
+- Name things: use camelCase
+- Practice:
+	1. revise your logic before coding
+	2. clearing expose the strucuture of the page
+	3. use correct indentation
+	4. write explanatory comments
+	5. avoid abusing comments
+	6. avoid huge function
+	7. use naming standard for functions and variables
+	8. summarize imports
+
+---
+
+## Arrays
+
+- An array is a special variable that can hold more than one value
+
+```javascript
+const cars = ["Saab", "Volvo", "BMW"];
+```
+
+- To create an array: `const array_name = [item1, item2, ...]`
+	- it is common practice to declare arrays with `const` keyword
+- Spaces and line breaks are not important, but acceptable
+
+```javascript
+const cars = [
+    "Saab",
+    "Volvo",
+    "BMW"
+];
+```
+
+- You can also create an array, then provide the elements
+
+```javascript
+const cars = [];
+cars[0] = "Saab";
+cars[1] = "Volvo";
+cars[2] = "BMW";
+```
+
+- Using the key word `new`
+	- `const cars = new Array("Saab", "Volvo", "BMW");`
+	- the is the exact same as the other way
+- Access an element with **index number**
+- Change an Array Element
+
+```javascript
+const cars = ["Saab", "Volvo", "BMW"];
+let car = cars[0];
+cars[0] = "Opel";
+```
+
+- Access the full array: refer to the array name
+
+```javascript
+const cars = ["Saab", "Volvo", "BMW"];
+document.getElementById("demo").innerHTMl = cars;
+```
+
+- Arrays are objects
+	- Objects use names to access its members
+
+```javascript
+const person = {firstName:"John", lastName:"Doe", age:46};
+console.log(person.firstName);
+// John
+```
+
+- Array elements can be objects: 
+	- you can have functions in an array 
+	- or another array in an array
+- Array properties and methods
+	- `cars.length //returns number of length`
+	- `cars.sort() //sort the array`
+- Looping array elements
+	- use `Array.forEach()`
+- Adding array elements: `push()`
+- Difference between Arrays and Objects
+	- array use **numbered indexes**
+	- objects use **named indexes**
+
+## Array Methods
+
+- `toString()` converts an array to a string of (comma separated) array values
+
+```javascript
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.toString();
+```
+
+- `join()`: joins all array elements into a string, much like `toString()` but you can specify the separator.
+
+```javascript
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.join(' * ');
+```
+
+- `pop()` removes the last element from an array
+	- returns the value that was removed
+- `push()` addes a new element to an array at the end
+	- Returns the new array length
+- `shift()` equivalent to popping but removes the first element instead of last
+	- returns the values that was removed
+- `unshift()` adds a new element to an array at the beginning
+	- returns the new array length
+- `delete` operator can delete array elements but it will leave an `undefined` holes in the array
+
+```javascript
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+delete fruits[0];
+```
+
+- `splice()` can add new items to an array
+	- first parameter defines the position where new element(s) should be added
+	- second parameter defines **how many** elements should be **removed**
+	- rest of parameters defines the new elements to be added
+	- returns an array with the delted items
+
+```javascript
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.spice(2, 0, "Lemon", "Kiwi");
+```
+
+
 
 
 
