@@ -786,6 +786,23 @@ function func1(a, b, c) {
 
 ## Element creation
 
+- `document.createElement(tagName, [options])` creates a new element of tag type tagName. `[options]` means you can add optional parameters
+
+```js
+const div = document.createElement('div');
+```
+
+## Append Elements
+
+- `parentNode.appendChild(childNode)` appends `childNode` as the last child of `parentNode`
+- `parentNode.insertBefore(newnode, referenceNode)` inserts `newNode` into `parentNode` before `referenceNode`
+
+## Remove Elements
+
+- `parentNode.removeChild(child)` removes `child` from `parentNode` on the DOM and returns reference to `child`
+
+
+
 
 
 
