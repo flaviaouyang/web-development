@@ -1,10 +1,10 @@
 @font-face {
-    font-family: "CaslonPro";
-    src: url("font/adobe-caslon-pro/ACaslonPro-Regular.otf");
+    font-family: "NewYorker";
+    src: url("font/New-Yorker-Font/NYIrvin.ttf")
 }
 
-p {
-    font-family: "CaslonPro";
+.flashfiction {
+    font-family: "NewYorker";
     text-align: center;
     color: rgb(219, 51, 52);
 }
