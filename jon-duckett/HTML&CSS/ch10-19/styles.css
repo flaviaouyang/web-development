@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "CaslonPro";
+    src: url("/Library/Fonts/ACaslonPro-Regular.otf") format("caslonpro-regular"),
+        url("/Library/Fonts/ACaslonPro-Bold.otf") format("caslonpro-bold"),
+    ;
+}
+
+p {
+    font-family: "ACaslonPro-Regular";
+    text-align: center;
+    color: rgb(219, 51, 52);
+}
