@@ -1,9 +1,63 @@
-@font-face {
-    font-family: "NewYorker";
-    src: url("font/New-Yorker-Font/NYIrvin.ttf")
+* {
+    border: 1px solid;
 }
 
-.flashfiction {
+
+/* font */
+@font-face {
+    font-family: "NewYorker";
+    src: url("font/New-Yorker-Font/NYIrvin.ttf");
+}
+
+@font-face {
+    font-family: "Graphik";
+    src: url("font/Graphik-Font-Family/GraphikMedium.otf");
+}
+
+@font-face {
+    font-family: "CaslonPro";
+    src: url("font/New-Yorker-Font/ACaslonPro-Bold.otf");
+}
+
+/* class */
+.underline-on-hover:hover {
+    text-decoration: underline;
+}
+
+/* header: logo nav-bar */
+.header-container {
+    display: flex;
+    flex-direction: row;
+}
+
+#logo {
+    width: 128px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+#search {
+    width: 32px;
+    height: 32px;
+}
+
+
+#nav {
+    font-family: "Graphik";
+    display: block;
+    float: right;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+}
+
+#nav:hover {
+    text-decoration: underline;
+}
+
+/* main */
+#flashfiction {
     font-family: "NewYorker";
     text-align: center;
     color: rgb(219, 51, 52);
