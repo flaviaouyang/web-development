@@ -1,3 +1,13 @@
+/* * {
+    border: 1px solid;
+} */
+
+/* h1 {
+    width: 100%;
+    height: 500px;
+    min-width: 600px;
+} */
+
 h2 {
     text-transform: lowercase;
 }
@@ -8,9 +18,18 @@ h3 {
 
 h4 {
     text-transform: capitalize;
+    width:300px;
+    margin: 10px auto 10px auto;
+    /* display: none; */
+    visibility: hidden;
 }
 
-.underline {
+p {
+    height:50px;
+    overflow: scroll;    
+}
+
+/* .underline {
     text-decoration: underline;
 }
 
@@ -40,8 +59,12 @@ h4 {
 
 .word-spacing {
     word-spacing: 2em;
-}
+} */
 
 blockquote>p:first-letter {
     font-size: 200%;
+}
+
+.box {
+    box-shadow:1px 1px 1px 2px;
 }
