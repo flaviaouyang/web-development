@@ -5,3 +5,43 @@ h2 {
 h3 {
     text-transform: uppercase;
 }
+
+h4 {
+    text-transform: capitalize;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.none {
+    text-decoration: none;
+}
+
+.overline {
+    text-decoration: overline;
+}
+
+.line-through {
+    text-decoration: line-through;
+}
+
+.blink {
+    text-decoration: blink;
+}
+
+.line-height {
+    line-height: 2;
+}
+
+.letter-spacing {
+    letter-spacing: 0.2em;
+}
+
+.word-spacing {
+    word-spacing: 2em;
+}
+
+blockquote>p:first-letter {
+    font-size: 200%;
+}
