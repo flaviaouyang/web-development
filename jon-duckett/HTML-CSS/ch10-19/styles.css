@@ -74,3 +74,9 @@ ul {
     /* list-style-type: circle;  */
     list-style-type: square; 
 }
+
+ol {
+    /* list-style-type: decimal; */
+    /* list-style-type: decimal-leading-zero; */
+    list-style-type: lower-latin;
+}
