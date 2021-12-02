@@ -73,10 +73,12 @@ ul {
     /* list-style-type: none; */
     /* list-style-type: circle;  */
     list-style-type: square; 
+    list-style-position: outside;
 }
 
 ol {
     /* list-style-type: decimal; */
     /* list-style-type: decimal-leading-zero; */
     list-style-type: lower-latin;
+    list-style-position: inside;
 }
