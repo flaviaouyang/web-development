@@ -2,7 +2,7 @@
 
 ## CSS
 
-* Basic syntax: selector, property and value;![](assets/Screen%20Shot%202021-11-04%20at%209.21.09%20PM.png)
+* Basic syntax: selector, property and value;
 ### Selectors: 
 1. Universal selector: every element would have the style applied to it
 ```css
@@ -132,3 +132,6 @@ img {
 	<div style="color: white; background-color: black;">hello there</div>
 </body>
 ```
+
+## Flexbox
+
