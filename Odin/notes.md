@@ -291,7 +291,47 @@ div.innerHTML = '<span>Hello World!</span>';
 	</head>
 	```
 
-	
+## Events
+
+- Events make things happen dynamically. They are actions that occur on your webpage such as mouse-clicks or keypresses, and using JavaScript we can make our webpage listen and reacy to these events
+
+- Three primary ways to go about this:
+
+	1. Attach functions' attributes directly on your HTML elements 
+
+		```html
+		<button onclick="alert('hello world')">Click me</button>
+		```
+
+	2. Set `on_event_` property on the DOM object in your JS
+
+		```html
+		<button id="btn">
+		    Click me
+		</button>
+		```
+
+		```js
+		const btn = ducoment.querySelector('#btn');
+		btn.onclick = () => alert("Hello World");
+		```
+
+	3. Attach even listeners to the nodes in JS
+
+		```html
+		<button id="btn">
+		    click me too
+		</button>
+		```
+
+		```js
+		const btn = document.querySelector('#btn');
+		btn.addEventListener('click', () => {
+		    alert("Hello World");
+		});
+		```
+
+- 
 
 
 
