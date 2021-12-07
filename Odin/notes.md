@@ -133,5 +133,45 @@ img {
 </body>
 ```
 
-## Flexbox
+## DOM - Document Object Model
+
+- DOM is a tree-like representation of the contents of a webpage
+	- a tree of *nodes* with different relationships depending on the way they are arranged in the HTML document
+
+```html
+<div id="container">
+    <div class="display"></div>
+    <div class="controls"></div>
+</div>
+```
+
+- `.display` is a child of `.container` and a sibiling to `.controls`
+
+### Targeting Nodes with Selectors
+
+- In DOM, you use **selectors** to target the nodes you want to work with. You can use a combination of CSS-style selectors and relationship properties to target the nodes you want
+	- Selectors to refer to `<div class="display"></div>`
+		1. `div.display`
+		2. `.display`
+		3. `#container > .display`
+		4. `div#container > div.display`
+	- Relational selectors with special properties owned by the nodes can also be used.
+
+```js
+const container = document.querySelector('#container');
+// select the #container div
+
+console.dir(container.firstElementChild);
+// select the first child of #container, aka .display
+
+const controls = document.querySelector('.controls');
+// select .controls div
+
+console.dir(controls.previousElementSibling);
+// selec the prior sibling aka .display
+```
+
+### DOM methods
+
+
 
