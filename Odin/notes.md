@@ -276,9 +276,22 @@ div.innerHTML = '<span>Hello World!</span>';
 
 - **Note**: `textContent` is preferable for adding text and `innerHTML` should be used sparingly as it can create security risks if missed.
 
-cc
+- **Keep in mind**: JS does **NOT** alter your HTML, but the DOM. HTML file will look the same, but JS changes what the vrowser renders.
 
+### Important Note:
 
+- JS code is ran when the JS file is ran or when the script tage in encountered in the HTML. If you include your JavaScript at the top of your file, many of the DOM manipulation methods will not work.
+
+	- You should include your Javascript at the bottom of your HTMl file so that it is ran after the DOM nodes are parsed and created
+	- Alternatively, you can link the JS file in the `<head>` of your HTML document. Use `<script>` tag with the `src` attribute containing the path to the JS file, and include `defer` keyword to load the file *after* the HTML is parsed
+
+	```html
+	<head>
+	    <script src="script.js" defer></script>
+	</head>
+	```
+
+	
 
 
 
