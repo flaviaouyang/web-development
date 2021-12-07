@@ -173,5 +173,108 @@ console.dir(controls.previousElementSibling);
 
 ### DOM methods
 
+- When the HTML code is parsed by a web browser, it is converted to the DOM. These nodes are objects with many properties and methods attached. And those properties and methods are the primary tool for us to manipulate our webpage.
+
+### Query Selectors
+
+- `element.querySelector(selector)` returns reference to the first match of `selector``
+- `element.querySelectorAll(selectors)` returns a 'nodelist' containing references to all of the matches of the `selectors`
+	- Note `querySelectorAll()` does not return an array
+
+### Element Creation
+
+- `document.createElement(tagName, [options])` creates a new element of tag type tagName. `[options]` means you can add optional parameters to the function
+
+```js
+const div = document.createElement('div')
+```
+
+- This function **does not** put the new element into DOM. It simply creates it in memory, so that you can manipulate the element.
+
+### Append Elements
+
+- `parentNode.appendChild(childNode)` appends `childNode` as the last child of `parentNode`
+- `parentNode.insertBefore(newNode, referenceNode)` inserts `newNode` into `parentNode` before `referenceNode`
+
+### Remove Elements
+
+- `parentNode.removeChild(child)` removes `child` from `parentNode` on the DOM and returns reference to `child`.
+
+### Altering Elements
+
+- When you have a reference to an element, you can use the reference to alter the element's own properties. You can add/remove and alter attribute, change classes, add inline style information and more
+
+```js
+const div = document.createElement('div');
+// create a new div referenced in the variable 'div'
+
+//add inline style
+div.style.color = 'blue';
+div.style.cssText = 'color: blue; background: white';
+div.setAttribute('style', 'color:blue; background: white');
+
+// more inline CSS properties
+div.backgroundColor = 'red';
+div.border = '1px solid black';
+div.width = '100px';
+div.height = '100px';
+```
+
+- **Note**: when accessing a **kebab-cased** css rule from JS, you need to use camelCase or bracket notation instead of dot notation.
+
+```js
+div.style.backgound-color //DOES NOT WORK
+div.style.backgroundColor //works
+//or
+div.style['background-color']
+dov.style.cssText = "background-color: white"; //when used in a string it's okay
+```
+
+### Editing Attributes
+
+```js
+div.setAttribute('id', 'theDiv');
+// if id exists update it to 'theDiv' else create an id with value "theDiv"
+
+div.getAttribute('id');
+//returns value of specified attribute
+
+div.removeAttribute('id');
+//removes specified attribute
+```
+
+### Working with classes
+
+```js
+div.classList.add('new');
+// adds class "new" to your new div
+
+div.classList.remove('new');
+// removes "new" class from div
+
+div.classList.toggle('active');
+// if div doesn't have class 'active' then add it
+// if it does, then remove it
+```
+
+- **Note**: it is standard to toggle a CSS style rather than adding and removing inline CSS
+
+### Adding text content
+
+```js
+div.textContent = 'Hello World!'
+// creates a text node containing "Hello World!"
+// and inserts it in div
+```
+
+### Adding HTML content
+
+```js
+div.innerHTML = '<span>Hello World!</span>';
+// renders the html inside 
+```
+
+
+
 
 
