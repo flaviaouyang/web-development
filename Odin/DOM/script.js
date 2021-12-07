@@ -36,3 +36,15 @@ textInside.textContent = "ME TOO!";
 backdrop.appendChild(textInside);
 
 container.appendChild(backdrop);
+
+const btnContainer = document.querySelector('#buttons');
+
+const m2 = document.createElement('button');
+m2.onclick = () => {alert("Hello there")};
+btnContainer.appendChild(m2);
+
+const m3 = document.createElement('button');
+m3.addEventListener('click', () => {
+    alert("Well done baby!")
+});
+btnContainer.appendChild(m3);

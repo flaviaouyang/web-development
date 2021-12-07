@@ -331,7 +331,55 @@ div.innerHTML = '<span>Hello World!</span>';
 		});
 		```
 
-- 
+- All 3 of these methods also work with named functions
+
+```html
+<button onclick="alertFunction()">
+    Click me baby
+</button>
+```
+
+```js
+function alertFunction() {
+    alert("YAY! THANKS FOR CLICKING!");
+}
+
+// method 2
+btn.onclick = alertFunction;
+
+/ /method 3
+btn.addEventListener('click', alertFunction);
+```
+
+### Attaching listeners to groups of nodes
+
+```html
+<div id="container">
+    <button id="1">
+        Click me
+    </button>
+    <button id="2">
+        Click me
+    </button>
+    <button id="3">
+        Click me
+    </button>
+</div>
+```
+
+```js
+const buttons = document.querySelectorAll('button');
+// use .forEach method to iterate through each button
+buttons.forEach((button) => {
+    button.addEventListener('click', () => {
+        alert(button.id);
+    });
+});
+```
+
+Here is a complete list of DOM events and their description.
+
+[HTML DOM Events](https://www.w3schools.com/jsref/dom_obj_event.asp)
 
 
 
