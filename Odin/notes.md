@@ -276,6 +276,8 @@ div.innerHTML = '<span>Hello World!</span>';
 
 - **Note**: `textContent` is preferable for adding text and `innerHTML` should be used sparingly as it can create security risks if missed.
 
+cc
+
 
 
 
