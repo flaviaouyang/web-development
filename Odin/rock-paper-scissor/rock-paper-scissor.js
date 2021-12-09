@@ -1,6 +1,12 @@
 let comScore = 0;
 let playScore = 0;
 let player = "";
+let round = 0;
+
+// if (round === 10) {
+//   // document.write("GAME OVER!");
+//   console.log("Game Over!");
+// }
 
 const rock = document.querySelector("#btn-rock");
 const paper = document.querySelector("#btn-paper");
@@ -12,17 +18,25 @@ const playMove = document.querySelector("#player-move");
 const compScoreDisplay = document.querySelector("#computer-score");
 const playScoreDisplay = document.querySelector("#player-score");
 
+const roundDisplay = document.querySelector("#rounds");
+
 rock.addEventListener("click", function () {
   playRound("Rock");
   playMove.textContent = "Rock";
+  round++;
+  roundDisplay.textContent = round;
 });
 paper.addEventListener("click", function () {
   playRound("Paper");
   playMove.textContent = "Paper";
+  round++;
+  roundDisplay.textContent = round;
 });
 scissors.addEventListener("click", function () {
   playRound("Scissors");
   playMove.textContent = "Scissors";
+  round++;
+  roundDisplay.textContent = round;
 });
 
 function computerPlay() {
@@ -89,3 +103,5 @@ function playRound(player) {
     console.log("Player won.");
   }
 }
+
+
