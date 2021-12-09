@@ -13,3 +13,10 @@ if (condition is true) {
 }
 ```
 
+- equality operator: `= =`
+	- Typecase string and number automatically
+- strict equality operator: `= = =`
+- inequality operator: `! =`
+- strict inequality operator: `! = =`
+- `&&` and
+- `||` or
