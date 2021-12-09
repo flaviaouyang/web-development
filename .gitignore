@@ -1,6 +1,2 @@
 # ignore open peeps file
 /open-peeps
-
-# ignore css and javascript exercises
-/css-exercises
-/javascript-exercises
