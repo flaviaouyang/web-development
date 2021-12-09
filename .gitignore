@@ -1,0 +1,6 @@
+# ignore open peeps file
+/open-peeps
+
+# ignore css and javascript exercises
+/odin/css-exercises
+/odin/javascript-exercises
