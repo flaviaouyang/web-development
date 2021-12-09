@@ -2,3 +2,5 @@
 
 ## Boolean
 
+- two values: `true` or `false`
+- 
