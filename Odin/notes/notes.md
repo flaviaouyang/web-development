@@ -384,6 +384,7 @@ Here is a complete list of DOM events and their description.
 ## Git Fork-and-Branch Workflow
 
 - The *fork and branch* workflow is a common way of collaborating on open source projects using **Git** and **GitHUb**
+
 - **Overview**:
 	- Fork a GitHub Repository
 	- Clone the forked repository to your local system
@@ -394,6 +395,7 @@ Here is a complete list of DOM events and their description.
 	- Push the branch to GitHub
 	- Open a pull request from the new branch to the original repo
 	- Clean up after your pull request is merged
+	
 - **Fork a GitHub repository**: forking is making a copy of the repository, but with a line back to the original
 	1. log into GitHub with your account
 	2. Find the GitHub repository that you'd like to work with
@@ -437,3 +439,100 @@ Here is a complete list of DOM events and their description.
 
 	- `git pull upstream master` //pull changes from original repository
 	- `git push origin master` //push changes to your forked repository
+
+## Objects
+
+- An object can be created with figure brackets `{}` with an optional list of properties.
+
+	- a property is composed of **key: value** pair
+		- **key**: a string or a property name
+		- **value**: can be anything
+
+	![Obect](img/object.png)
+
+	- An **empty object** or **empty cabinet** can be created using one of two syntaxes
+
+```js
+let user = new Object();
+let user = {};
+// usually use the figure brackets
+// this declaration is called an object literal
+```
+
+- an Object with content
+
+```js
+let user = {
+	name: "John",
+	age: 30
+};
+```
+
+- **add a boolean value** `user.isAdmin = true;`
+
+- **remove a property**: `delete user.age;`
+
+- **multiword** property names are allowed, but **must be enclosed in quotes**
+
+- **Sqaure brackets**:
+
+	- **dot notation** does not work for multiword properties
+
+	- ```js
+		let user = {};
+		user["likes birds"] = true;
+		alert(user["likes birds"]);
+		delete user["likes birds"];
+		```
+
+- **computed properties**:
+
+	- use square brackets in an object literal
+
+	- ```js
+		let fruit = prompt("Which fruit to buy?", "apple");
+		let bag = {
+		    [fruit]: 5,
+		};
+		alert(bag.apple); // 5 if fruit = "apple"
+		```
+
+	- `[fruit]` means that the property name should be taken from `fruit`
+
+- **Property value shorthand**
+
+```js
+function makeUser (name, age) {
+    return {
+        name: name,
+        age: age,
+    };
+}
+let user = makeUser("John", 30);
+alert(user.name);
+
+// properties have the same names as variables
+// here is a shorthand
+function makeUser(name, age){
+    return {
+        name,
+        age
+    };
+}
+```
+
+- `in` operator:
+
+	- `"key" in object`
+
+- `for...in`loop:
+
+	- ```js
+		for (key in object) {
+		    //executes body for each key among object properties
+		}
+		```
+
+## Intermediate / Advanced array
+
+- 
