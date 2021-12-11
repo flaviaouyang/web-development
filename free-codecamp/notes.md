@@ -263,5 +263,92 @@ ourPets[0].names[1]; //fluffy
 ourPets[1].names[0]; // spot
 ```
 
+## While Loops
+
+```js
+let i = 0;
+while (i < 10) {
+	console.log(i);
+	i++;
+}
+```
+
+## For loops
+
+```js
+// for(a; b; c)
+// a is the initialization statement
+// b is the condition statement
+// c is the final expression
+
+for (let i = 0; i < 10; i++) {
+    console.log(i);
+}
+```
+
+## Do...While loops
+
+- Execute `do` code no matter what, then continue to run the loop `while` the specified condition evaluates to `true`
+
+```js
+const ourArray = [];
+let i = 0;
+do {
+    ourArray.push(i);
+    i++;
+} while (i < 5);
+```
+
+## Recursion
+
+- **recursion** is the concept that a function can be expressed in terms of itself.
+
+## Random
+
+- `Math.random()` generates a random decimal number between `0` (inclusive) and `1`(exclusive)
+- **Generate whole number**: `Math.floor(Math.random * num)`
+- **Generate whole number within a range**: `Math.floor(Math.random() * (max-min+1)) + min`
+
+## Cast String into Integer
+
+- `parseInt()` function parses a string and returns an integer
+
+```js
+const a = parseInt("007");
+```
+
+- `parseInt()` takes a second argument for radix which specifies the base of the number in the string
+	- `radix` can be an integer between **2 and 36**.
+	- `parseInt(string, radix);`
+
+## Use COnditional (Ternary) Operator
+
+- `a ? b : c` where `a` is the condition, `b` is the code to run when the condition is `true`, and `c` is the code to run when the condition return `false`
+
+```js
+function findGreater (a, b) {
+    if (a > b) {
+        return "a is greater";
+    } else {
+        return "b is greater or equal";
+    }
+}
+
+// use ternary operator
+function findGreater (a, b) {
+    return a > b ? "a is greater" : "b is greater";
+}
+```
+
+- **Multiple ternary operators**
+
+```js
+function findGreaterOrEqual (a, b) {
+    return (a > b) ? "Greater"
+    	: (a === b) ? "Equal"
+    	: "smaller";
+}
+```
+
 
 
