@@ -469,5 +469,70 @@ let user = {
 ```
 
 - **add a boolean value** `user.isAdmin = true;`
+
 - **remove a property**: `delete user.age;`
+
+- **multiword** property names are allowed, but **must be enclosed in quotes**
+
+- **Sqaure brackets**:
+
+	- **dot notation** does not work for multiword properties
+
+	- ```js
+		let user = {};
+		user["likes birds"] = true;
+		alert(user["likes birds"]);
+		delete user["likes birds"];
+		```
+
+- **computed properties**:
+
+	- use square brackets in an object literal
+
+	- ```js
+		let fruit = prompt("Which fruit to buy?", "apple");
+		let bag = {
+		    [fruit]: 5,
+		};
+		alert(bag.apple); // 5 if fruit = "apple"
+		```
+
+	- `[fruit]` means that the property name should be taken from `fruit`
+
+- **Property value shorthand**
+
+```js
+function makeUser (name, age) {
+    return {
+        name: name,
+        age: age,
+    };
+}
+let user = makeUser("John", 30);
+alert(user.name);
+
+// properties have the same names as variables
+// here is a shorthand
+function makeUser(name, age){
+    return {
+        name,
+        age
+    };
+}
+```
+
+- `in` operator:
+
+	- `"key" in object`
+
+- `for...in`loop:
+
+	- ```js
+		for (key in object) {
+		    //executes body for each key among object properties
+		}
+		```
+
+## Intermediate / Advanced array
+
 - 
