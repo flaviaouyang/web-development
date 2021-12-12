@@ -1,5 +1,13 @@
 # Notes
 
+---
+
+---
+
+# Foundation
+
+---
+
 ## CSS
 
 * Basic syntax: selector, property and value;
@@ -533,6 +541,39 @@ function makeUser(name, age){
 		}
 		```
 
-## Intermediate / Advanced array
+## Introduction to the Back End 
 
-- 
+- **backend** are the part of a website or software program that users do not see.
+- Most modern websites are **dynamic** meaning webpage content is generated on-the-fly. 
+	- A dynamic page contains one or more **scripts** that run on the **web server** each time the page is accessed.
+- **Examples** of backend processes:
+	1. processing an incoming webpage request
+	2. running a script (PHP, ASP, JSP) to generate HTML
+	3. access date from a database using SQL queries
+	4. storeing or updating records in a database
+	5. encrypting and decrypting data
+	6. handling file uploads and downloads
+	7. Process user input via JS
+
+### Back-End Web Architecture**
+
+- Back-end is the code that runs on the server, that receives requests from the clients, and contains the logic to send the appropriate data back to the client. 
+
+### HTTP Requests
+
+- **HTTP** stands for Hypertext Transfer Protocol
+- HTTP is used to **structure requests and responses over the internet**
+- The transfer of resouces happens using TCP (Transmission Control Protocol).
+	- TCP manages the channels between your browser and the server.
+	- TCP is used to manage many types of internet connections in which one machine wants to send something to another. 
+
+---
+
+---
+
+# Full Stack JavaScript
+
+---
+
+## JavaScript
+

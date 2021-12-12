@@ -1,3 +1,7 @@
+# JavaScript Algorithms and Data Structures 
+
+---
+
 # Basic JavaScript
 
 ## Boolean
@@ -321,7 +325,7 @@ const a = parseInt("007");
 	- `radix` can be an integer between **2 and 36**.
 	- `parseInt(string, radix);`
 
-## Use COnditional (Ternary) Operator
+## Use Conditional (Ternary) Operator
 
 - `a ? b : c` where `a` is the condition, `b` is the code to run when the condition is `true`, and `c` is the code to run when the condition return `false`
 
@@ -350,5 +354,143 @@ function findGreaterOrEqual (a, b) {
 }
 ```
 
+---
+
+# ES6
+
+### Scopes of the `var` and `let` keywords
+
+- `var` is local if declared inside a function
+	- global is declared outside a function
+- `let` is local if declared inside a block, statement, or expression.
+
+```js
+for (var i = 0; i < 3; i++) {
+	console.log(i);
+}
+
+// i is a global variable
+
+for (let j = 0; j < 5; j++) {
+    console.log(j);
+}
+
+// j is  local
+```
+
+### Mutate an Array Declared with `const`
+
+- Objects (including arrays and functions) assigned to a variable using `const` are still mutable. It only **prevents reassignment** of the variable identifier.
+
+```js
+const s = [5, 6, 7];
+s = [1, 2, 3]; // this will result in an error
+```
+
+### Prevent Object Mutation
+
+- To ensure your data doesn't change, `Object.freeze` will prevent data mutation.
+
+```js
+let obj = {
+    name: "cool",
+    review: "good"
+};
+Object.freeze(obj);
+obj.review = "bad"; // this will result in an error
+```
+
+### Arrow functions
+
+```js
+const myFunc = function() {
+    const myVar = "value";
+    return myVar;
+};
+
+// in arrow function syntax
+const myFunc = () => {
+    const myVar = "value";
+    return myVar;
+};
+```
+
+- When there is no function body and only a return value, `return` can be omitted.
+
+```js
+const myFunc = () => "value";
+```
+
+- **Passing arguments** into arrow function
+
+```js
+const doubler = (item) => item * 2;
+double(4);
+```
+
+- **Only one parameter**, parentheses can be omitted
+
+```js
+const doubler = item => item*2;
+```
+
+- **Passing multiple parameters**
+
+```js
+const multiplier = (item, multi) => item * multi;
+multiplier(4, 2);
+```
+
+### Set defualt parameters for your functions
+
+```js
+const greeting = (name="Anonymous") => "Hello" + name;
+console.log(greeting());
+console.log(greeting("John"));
+```
+
+### Use the Rest Parameter with Function Parameters
+
+- With rest parameter, you can create functions that take a variable number of arguments. These arguments are stored in an array that can be accessed later from inside the function.
+
+```js
+function howMany(...args) {
+    return "You have passed " + args.length + " arguments";
+}
+
+console.log(howMany(0, 1, 2)); // 3
+console.log(howMany("string", null, [1, 2, 3], {})) // 4
+```
+
+- The rest parameter eliminates the need to check the `args` array and allows us to apply `map()`, `filter()` and `reduce()` on the parameters array
+
+### Use the spread operator to evaluate Arrays In-Place
+
+- *spread operator* lets us expand arrays and other expressions in places where multiple parameters or elements are expected.
+- `apply()` computes the maximum value in an array
+
+```js
+let arr = [6, 89, 3, 45];
+let maximus = Math.max.apply(null, arr);
+
+//return 89
+```
+
+-  `Math.max(arr)` will return `NaN`
+
+	- Because `Math.max()` expects comma-separated arguments, but not an array.
+
+	```js
+	const arr = [6, 89, 3, 45];
+	const maximus = Math.max(..arr);
+	```
+
+	- `...arr` returns an unpacked array
+		- in other words, it spreads the array
+	
+-  Spread operator only works in-place.
+
+-  `const spreaded = ...arr;` will not work
 
 
+​	
