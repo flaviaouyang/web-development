@@ -492,5 +492,50 @@ let maximus = Math.max.apply(null, arr);
 
 -  `const spreaded = ...arr;` will not work
 
+### Destructuring Assignment
 
-​	
+- *Destructuring assignment* is used for neatly assigning values taken directly from an object
+
+```js
+const user = { name: "John Doe", age: 34};
+const name = user.name;
+const age = user.age;
+
+// destructuring syntax
+const { name, age } = user;
+```
+
+- Give new variable names in the assignment
+
+```js
+const { name: userName, age : userAge } = user;
+```
+
+- **Nested Objects**
+
+```js
+const user = {
+    johnDoe: {
+        age: 34,
+        email: 'johndoe@cool.mail'
+    }
+};
+
+const { johnDoe: { age, email }} = user;
+const { johnDoe : { age:userAge, email: userEmail}} = user;
+```
+
+- **Arrays**:
+	- Differences between destructuring assignment and spread operator: **you cannot pick which elements with spread operator**
+
+```js
+const [a, b] = [1, 2, 3, 4, 5, 6];
+console.log(a, b) 
+//a is 1 
+//b is 2
+const [a, b,,, c] = [1, 2, 3, 4, 5, 6];
+//a is 1 b is 2
+//c is 5
+```
+
+- 
