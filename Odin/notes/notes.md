@@ -541,7 +541,35 @@ function makeUser(name, age){
 		}
 		```
 
-## Introduction to the Back End 
+## Intermediate Arrays
+
+- `array.prototype.filter()`
+
+```js
+const inventor = [
+    //this is an array of inventors
+    // ...
+];
+
+const female = inventor.filter(function(inventor) {
+   if(inventor.sex === "female") {
+       return true; //this will keep it
+   } else {
+       return false;
+       // return anything but true will lose it
+   }
+});
+
+// or the same thing using arrow function
+const female = inventor.filter(inventor => inventor.sex === "female")
+
+console.table(female);
+// this will show a table of female inventors
+```
+
+
+
+## Introduction to the Back End
 
 - **backend** are the part of a website or software program that users do not see.
 - Most modern websites are **dynamic** meaning webpage content is generated on-the-fly. 
