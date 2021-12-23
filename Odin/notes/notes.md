@@ -561,10 +561,31 @@ const female = inventor.filter(function(inventor) {
 });
 
 // or the same thing using arrow function
-const female = inventor.filter(inventor => inventor.sex === "female")
+const female = inventor.filter(inventor => inventor.sex === "female");
 
 console.table(female);
 // this will show a table of female inventors
+```
+
+- `array.prototype.map()` will return an array of asked Information 
+
+```js
+const fullName = inventor.map(inventor => inventor.first + inventor.last);
+```
+
+- `array.prototype.sort()` will sort 
+
+```js
+const oldToYoung = inventor.sort(function(a, b) {
+    if (a.year > b.year) {
+        return 1;
+    } else {
+        return -1;
+    }
+});
+
+// or with arrow function and ternerary operator
+const oldToYoung = inventor.sort((a, b) => a.year ? 1 : -1);
 ```
 
 
