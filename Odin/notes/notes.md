@@ -624,5 +624,62 @@ const oldToYoung = inventor.sort((a, b) => a.year ? 1 : -1);
 
 ---
 
-## JavaScript
+# JavaScript
+
+---
+
+## Objects and Object constructors
+
+- define objects with **object literal** syntax:
+
+```js
+const myObject = {
+  	property: "value",
+    otherProperty: 77,
+    "function property": function(){
+        //dp stuff
+    }
+};
+```
+
+- getting information
+	1. dot notation: `myObject.property` //value
+	2. bracket notation: `myObject["function property"]` //function
+
+## Objects as a Design Pattern
+
+- Group things into objects to organize 
+
+```js
+const playerOne = {
+    name: "tim",
+    marker: "X"
+};
+
+const playTwo = {
+    name: "jenn",
+    marker: "O"
+};
+```
+
+- **Object constructors**: duplicate a specific type of object
+
+```js
+function Player (name, marker) {
+    this.name = name;
+    this.marker = marker;
+    this.sayName = function() {
+        console.log(name);
+    }
+}
+
+//call the function with keyword new
+const player = new Player('steve', 'X');
+console.log(player.name) // 'steve'
+player.sayName(); //'steve'
+```
+
+
+
+
 
