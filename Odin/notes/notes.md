@@ -679,7 +679,11 @@ console.log(player.name) // 'steve'
 player.sayName(); //'steve'
 ```
 
+## Protoype
 
+- All objects in JS have a prototype which is another object that the original object inherits from
+	- The original object has access to all of its prototype's methods and properties
+	- 
 
 
 
