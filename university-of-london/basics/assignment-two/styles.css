@@ -1,0 +1,13 @@
+/** This is a comment that the browser will ignore,
+* Put your CSS code into this file
+*/
+h1 {
+    /* set the background color of h1 to aqua */
+    background-color: aqua;
+    /* sent font size to extra large */
+    font-size: x-large;
+    /* make h1 bold */
+    font-weight: bolder;
+    /* center h1 */
+    text-align: center;
+}

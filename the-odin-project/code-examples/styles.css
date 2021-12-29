@@ -1,0 +1,32 @@
+/* {
+    border: 2px solid red;
+} */
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-size: 40px;
+}
+
+.box-one {
+    background-color: blue;
+    border: 20px solid green;
+    padding: 40px;
+    margin: 60px;
+    height: 100px;
+    width:200px;
+    box-sizing: border-box;
+    /* this makes the height and width include border */
+}
+
+.box-two {
+    background-color: plum;
+    border: 20px solid orange;
+    padding: 40px;
+    margin: 60px;
+    /* margin collapses between two elements */
+    /* there won't be a 120px distance between box one and two, only 60px */
+    /* the distance will be the larger padding */
+    height: 100px;
+    width:200px;
+}
