@@ -47,3 +47,7 @@
 - Obfuscation vs Simplicity
   - no corporate annual reports
   - no confusing content padded by generic imagery
+
+## Bootstrap
+
+- 
