@@ -538,4 +538,13 @@ const [a, b,,, c] = [1, 2, 3, 4, 5, 6];
 //c is 5
 ```
 
-- 
+- **Rest parameter and arrays**:
+
+```js
+const [a, b, ...arr] = [1, 2, 3, 4, 5];
+// a = 1
+// b = 2
+// arr = [3, 4, 5]
+```
+
+- **pass an object as a function's parameters**
