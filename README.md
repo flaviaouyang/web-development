@@ -4,3 +4,5 @@
 
 This repository contains many learning resources, notes and code examples from
 different learning platforms.
+
+## Structure
