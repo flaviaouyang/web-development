@@ -1,7 +1,7 @@
 # Web Development
-- This repository is to document the journey of learning web development.
+This repository is to document the journey of learning web development.
 ## Content
-- This repository contains many learning resources, notes and code examples from
+This repository contains many learning resources, notes and code examples from
 different learning platforms.
 - HTML
 - CSS
