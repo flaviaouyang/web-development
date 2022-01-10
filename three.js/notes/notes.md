@@ -104,3 +104,48 @@ animate();
 - Run every frame
 - **Anything that you wish to move or change while the app is running has to go through the `animate loop`**
 
+---
+
+# Installation
+
+1. `npm install --save three`
+
+2. Import:
+
+	````javascript
+	// import the entire core lib
+	import * as THREE from 'three';
+	const scene = new THREE.Scene();
+	````
+
+	```javascript
+	// import just the part i need
+	import {Scene} from 'three';
+	const scene = new Scene();
+	```
+
+---
+
+# Drawing lines
+
+```javascript
+import * as THREE from 'three';
+
+const scene = new THREE.Scene();
+
+const camera = new THREE.PerspectiveCamera(45, window.innerWidth/window.innerHeight, 1, 500);
+camera.position.set(0, 0, 100);
+camera.lookAt(0, 0, 0);
+
+const renderer = new THREE.WebGLRenderer();
+renderer.setSize(window.innerWidth, window.innerHeight);
+document.body.appendChild(renderer.domElement);
+```
+
+## define a material for lines
+
+```javascript
+const material = new THREE.LineBasicMaterial({color: 0x0000ff});
+// there is also LineDashedMaterial
+```
+
