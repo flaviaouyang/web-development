@@ -106,7 +106,7 @@ animate();
 
 ---
 
-# Installation
+# Installation (ISSUES**)
 
 1. `npm install --save three`
 
@@ -149,3 +149,22 @@ const material = new THREE.LineBasicMaterial({color: 0x0000ff});
 // there is also LineDashedMaterial
 ```
 
+## Create a geometry with some vertices
+
+```js
+const points = [];
+points.push(new THREE.Vector3(-10, 0, 0));
+pointpoints.push( new THREE.Vector3( 0, 10, 0 ) );
+points.push( new THREE.Vector3( 10, 0, 0 ) );
+
+const geometry = new THREE.BufferGeometry().setFromPoints( points );
+```
+
+```js
+const line = new THREE.Line( geometry, material );
+```
+
+```js
+scene.add( line );
+renderer.render( scene, camera );
+```
