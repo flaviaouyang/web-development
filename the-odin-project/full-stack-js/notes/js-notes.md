@@ -11,7 +11,7 @@ const myObject = {
   	property: "value",
     otherProperty: 77,
     "function property": function(){
-        //dp stuff
+        //do stuff
     }
 };
 ```
@@ -36,7 +36,7 @@ const playTwo = {
 };
 ```
 
-- **Object constructors**: duplicate a specific type of object
+- **Constructors**
 
 ```js
 function Player (name, marker) {
