@@ -55,16 +55,36 @@ player.sayName(); //'steve'
 
 ## Protoype
 
-- All objects in JS have a prototype which is another object that the original object inherits from
+- All objects in JS have a prototype which is **another object that the original object inherits from**
 	- The original object has access to all of its prototype's methods and properties
 - Every JavaScript function has a **prototype property** which is empty by default
 	- You can attach properties and methods on this prototype property when you want to implement inheritance
-	- prototype property is not enumerable meaning that it is accessible in a for/in loop
+	- prototype property is not enumerable meaning that it is NOT accessible in a for/in loop
 
-- Prototypes have prototype attributes: they are like characteristics of the object
+```js
+function PrintStuff (doc) {
+    this.doc = doc;
+}
+
+PrintStuff.prototype.print = function() {
+    console.log(doc);
+}
+const newObj = new PrintStuff ("I am a new object and I inherited print");
+newObj.print();
+```
+
+
+
+- Prototypes have **prototype attribute**s: they are like characteristics of the object
 	- An object's prototype attribute points to the object's parent -- the object it inherites its properties from
 	- It is formally referred to as the prototype object
 	- it is set automatically when you create a new object
+- Prototype attribute created with `new Object()` or **Object literal**
 
-- 
+```javascript
+const userAccount = new Object();
+const userAccount = {new: "Mike"};
+```
+
+
 
