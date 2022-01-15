@@ -1,3 +1,6 @@
+// the array that will be used to store all books
+let Library = [];
+
 class Book {
     constructor(title, author, page, haveRead) {
         this.title = title;
@@ -13,9 +16,6 @@ class Book {
     }
 }
 
-const theOutsider= new Book ("The Outsider", "Albert Camus", "250", true);
-console.log(theOutsider.author);
-console.log(theOutsider.info());
-const bellJar = new Book ("The bell jar", "Sylvia Plath", "500", false);
-console.log(bellJar.info());
-
+function addBookToLibrary() {
+    
+}
