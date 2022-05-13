@@ -25,7 +25,7 @@ different learning platforms.
 
 ## STRUCTURE
 
-- [General Notes](https://github.com/flaviaouyang/web-development/blob/master/general/notes/note.md)
+- [General Notes](./general/notes/note.md)
 - [`three.js` Notes]()
 - [Full Stack Open 2022]()
 
