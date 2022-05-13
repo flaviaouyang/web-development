@@ -1,8 +1,8 @@
-# Web Development
+# FULL STACK WEB DEVELOPMENT
 
 Notes and source code related to web development
 
-## Content
+## INTRODUCTION
 
 This repository contains many learning resources, notes and code examples from
 different learning platforms.
@@ -22,6 +22,12 @@ different learning platforms.
 - SQL
 - GraphQL
 - And more...
+
+## STRUCTURE
+
+- [General Notes](./general/notes/note.md)
+- [`three.js` Notes]()
+- [Full Stack Open 2022]()
 
 ## SPECIAL THANKS
 
