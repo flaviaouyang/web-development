@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Basics</title>
+  </head>
+  <body>
+    <h1>Form Basics</h1>
+    <ul>
+      <li>Form element is a container element</li>
+      <li>Form accepts two essential attributes</li>
+      <ul>
+        <li>
+          action: takes a URL that tells the form where it should send the data
+          to
+        </li>
+        <li>
+          method: tells the method which HTTP method it should use to submit
+        </li>
+        <li><strong>Example:</strong></li>
+        <br />
+        <form action="example.com/path" method="post">
+          <label for="something">Enter some text:</label>
+          <input
+            type="text"
+            id="something"
+            placeholder="something..."
+            name="something"
+          />
+          <input type="submit" value="submit" />
+        </form>
+      </ul>
+    </ul>
+    <h1>Form Controls</h1>
+    <ul>
+      <li>Input element: accepts a type attribute</li>
+      <li>
+        Label element: inform users what type of data they are expected to enter
+      </li>
+      <ul>
+        <li>for attribute: associate the label with a certain input element</li>
+        <li>id attribute(input)</li>
+        <li>placeholder attribute(input)</li>
+        <li>
+          name attribute(input): serves as a reference to the data inputted
+        </li>
+        <li><strong>Example:</strong></li>
+        <br />
+        <form action="http://httpbin.org/post" method="post">
+          <div>
+            <label for="first_name">First Name:</label>
+            <input type="text" name="first_name" id="first_name" />
+          </div>
+          <br />
+          <div>
+            <label for="last_name">Last Name:</label>
+            <input type="text" name="last_name" id="last_name" />
+          </div>
+          <br />
+          <div>
+            <label for="age">Age:</label>
+            <input type="number" name="age" id="age" />
+          </div>
+          <br />
+          <button type="submit">Submit</button>
+        </form>
+        <br />
+        <li>Email input:</li>
+        <label for="user_email">Email Address:</label>
+        <input
+          type="email"
+          id="user_email"
+          name="email"
+          placeholder="you@example.com"
+        />
+        <li>Password input:</li>
+        <label for="user_password">Password:</label>
+        <input type="password" id="user_password" name="password" />
+        <li>Date input:</li>
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" />
+        <li>Text Area input:</li>
+        <textarea rows="20" cols="60"></textarea>
+        <li>Dropdown:</li>
+        <select name="Car">
+          <option value="mercedes" selected>Mercedes</option>
+          <option value="tesla">Tesla</option>
+          <option value="volvo">Volvo</option>
+          <option value="bmw">BMW</option>
+          <option value="mini">Mini</option>
+          <option value="ford">Ford</option>
+        </select>
+        <select name="fashion">
+          <optgroup label="Clothing">
+            <option value="t_shirt">T-Shirts</option>
+            <option value="sweater">Sweaters</option>
+            <option value="coats">Coats</option>
+          </optgroup>
+          <optgroup label="Foot Wear">
+            <option value="sneakers">Sneakers</option>
+            <option value="boots">Boots</option>
+            <option value="sandals">Sandals</option>
+          </optgroup>
+        </select>
+        <li>Buttons:</li>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+        <button type="button">Click to Toggle</button>
+      </ul>
+    </ul>
+    <h1>Organizing Form Elements</h1>
+    <ul>
+      <li>
+        Fieldset: a container element that allows us to group related form
+        inputs into one logical unit
+      </li>
+      <fieldset>
+        <label for="first_name">First Name</label>
+        <input type="text" id="first_name" name="first_name" />
+
+        <label for="last_name">Last Name</label>
+        <input type="text" id="last_name" name="last_name" />
+      </fieldset>
+      <li>Legend: used to give field sets a heading or caption</li>
+      <fieldset>
+        <legend>Contact Details</legend>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" />
+
+        <label for="phone_number">Phone Number:</label>
+        <input type="tel" id="phone_number" name="phone_number" />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Delivery Details</legend>
+
+        <label for="street_address">Street Address:</label>
+        <input type="text" id="street_address" name="street_address" />
+
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" />
+
+        <label for="zip_code">Zip Code:</label>
+        <input type="text" id="zip_code" name="zip_code" />
+      </fieldset>
+    </ul>
+  </body>
+</html>
