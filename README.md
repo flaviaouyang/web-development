@@ -27,8 +27,8 @@ Covered topics:
 ## STRUCTURE
 
 - HTML
-  - [Form](./html-css/html/form.html)
   - [Element Overview](./html-css/html/html-element.md)
+  - [Form](./html-css/html/form.html)
   - [SVG](./html-css/html/svg.md)
 - CSS
   - [Reset](./html-css/css/default-styles.md)
