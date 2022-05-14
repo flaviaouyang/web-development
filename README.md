@@ -7,6 +7,8 @@ Notes and source code related to web development
 This repository contains many learning resources, notes and code examples from
 different learning platforms.
 
+Covered topics:
+
 - HTML
 - CSS
 - Bootstrap
