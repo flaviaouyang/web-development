@@ -46,7 +46,7 @@ Covered topics:
   - [Call Stack](./javascript/call-stack.md)
   - [Asynchronous](./javascript/asynchronous.md)
 - `Node.js`
-  - [code example of http module](./node-js/http.js)
+  - [Code Example of http Module](./node-js/http.js)
 - `Express.js`
 - `Three.js`
 - Database
