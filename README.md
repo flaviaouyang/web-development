@@ -54,6 +54,11 @@ Covered topics:
 - Version Control
   - [How to write good commit messages](./general/version-control/write-good-commit.md)
   - [Git Fork and Branch Workflow](./general/version-control/fork-n-branch.md)
+- Cheat Sheets
+  - [CSS](./cheat-sheet/css.pdf)
+  - [Flexbox](./cheat-sheet/flexbox.png)
+  - [HTML](./cheat-sheet/html.pdf)
+  - [Shortcuts](./cheat-sheet/shortcut.md)
 - [Full Stack Open 2022](./react/README.md)
 
 ## SPECIAL THANKS
