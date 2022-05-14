@@ -11,17 +11,16 @@ Covered topics:
 
 - HTML
 - CSS
-- Bootstrap
 - Javascript
-  - Basics
   - DOM
   - Event
   - React
   - `three.js`
   - `node.js`
   - `express.js`
-- Mongo DB
-- SQL
+- Database
+  - SQL
+  - Mongo DB
 - GraphQL
 - And more...
 
