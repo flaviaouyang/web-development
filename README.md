@@ -1,6 +1,6 @@
 # FULL STACK WEB DEVELOPMENT
 
-Notes and source code related to web development
+[Visit the website](https://flaviaouyang.github.io/web-development/)
 
 ## INTRODUCTION
 
