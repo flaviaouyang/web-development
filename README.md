@@ -27,7 +27,6 @@ Covered topics:
 
 ## STRUCTURE
 
-- [General Notes](./general/miscellaneous/notes/note.md)
 - HTML
   - [Form](./general/html-css/html/form.html)
   - [Element Overview](./general/html-css/html/html-element.md)
@@ -37,11 +36,24 @@ Covered topics:
   - [Units](./general/html-css/css/units.md)
   - [Positioning](./general/html-css/css/positioning.md)
   - [Frameworks & Pre-processors](./general/html-css/css/framework-preprocessor.md)
+- JavaScript
+  - [How to run JS scripts](./general/javascript/how-to-run.md)
+  - [variable](./general/javascript/variable.md)
+  - [condition](./general/javascript/condition.md)
+  - [function](./general/javascript/function.md)
+  - [array](./general/javascript/array.md)
+  - [object](./general/javascript/object.md)
+  - [call stack](./general/javascript/call-stack.md)
+  - [asynchronous](./general/javascript/asynchronous.md)
+- `Node.js`
+  - [code example of http module](./general/node-js/http.js)
+- `Express.js`
+- `Three.js`
 - Database
   - [Relational Database](./general/database/relational-database/RDBMS.md)
 - Version Control
   - [How to write good commit messages](./general/version-control/write-good-commit.md)
-- [`three.js` Notes](./three-js-journey/README.md)
+  - [Git Fork and Branch Workflow](./general/version-control/fork-n-branch.md)
 - [Full Stack Open 2022](./react/README.md)
 
 ## SPECIAL THANKS
