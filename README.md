@@ -49,8 +49,11 @@ Covered topics:
   - [Code Example of http Module](./node-js/http.js)
 - `Express.js`
 - `Three.js`
+- React
 - Database
-  - [Relational Database](./database/relational-database/RDBMS.md)
+  - Relational Database
+    - [Relational Database](./database/relational-database/RDBMS.md)
+  - Mongo DB
 - Version Control
   - [How to write good commit messages](./version-control/write-good-commit.md)
   - [Git Fork and Branch Workflow](./version-control/fork-n-branch.md)
@@ -59,7 +62,6 @@ Covered topics:
   - [Flexbox](./cheat-sheet/flexbox.png)
   - [HTML](./cheat-sheet/html.pdf)
   - [Shortcuts](./cheat-sheet/shortcut.md)
-- [Full Stack Open 2022](./react/README.md)
 
 ## SPECIAL THANKS
 
