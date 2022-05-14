@@ -1,54 +1,5 @@
 # General Notes
 
-### Objects and Symbols
-
-- `object` type is special; different from primitive types
-  - Used to store collections of data and more complex entities
-- `symbol` type is used to create unique identifiers
-
-### The `typeof` operator
-
-- `typeof` will return the type of the argument
-- has two syntax
-  - `typeof x`
-  - `typeof(x)`
-
-## Conditionals
-
-### Comparisons
-
-- greater / lesser than: `a > b`, `a < b`
-- Greater / lesser than or equal to: `a >=b, a <= b`
-- Equal: `===`
-- not equal: `!=!`
-
-![Screen Shot 2021-11-22 at 4.27.09 PM](/Users/flaviaouyang/Library/Application Support/typora-user-images/Screen Shot 2021-11-22 at 4.27.09 PM.png)
-
-### if statement
-
-```javascript
-if (condition){
-	...
-} else if (condition) {
-    ...
-} else {
-    ...
-}
-```
-
-### logical operators
-
-- `||`: or
-- `&&`: and
-- `!`: not
-- `??`: nullish coalescing
-
-### Ternary operator
-
-```javascript
-( conditon ) ? run this code : run this code instead
-
-let greeting = ( isBirthday ) ? 'Happy BDay' : 'cool';
 ```
 
 ## Built-in browser functions
