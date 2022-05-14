@@ -38,13 +38,13 @@ Covered topics:
   - [Frameworks & Pre-processors](./html-css/css/framework-preprocessor.md)
 - JavaScript
   - [How to run JS scripts](./javascript/how-to-run.md)
-  - [variable](./javascript/variable.md)
-  - [condition](./javascript/condition.md)
-  - [function](./javascript/function.md)
-  - [array](./javascript/array.md)
-  - [object](./javascript/object.md)
-  - [call stack](./javascript/call-stack.md)
-  - [asynchronous](./javascript/asynchronous.md)
+  - [Variable](./javascript/variable.md)
+  - [Condition](./javascript/condition.md)
+  - [Function](./javascript/function.md)
+  - [Array](./javascript/array.md)
+  - [Object](./javascript/object.md)
+  - [Call Stack](./javascript/call-stack.md)
+  - [Asynchronous](./javascript/asynchronous.md)
 - `Node.js`
   - [code example of http module](./node-js/http.js)
 - `Express.js`
