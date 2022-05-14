@@ -52,7 +52,7 @@ Covered topics:
 - React
 - Database
   - Relational Database
-    - [Interview Preparation: Concepts](./database/relational-database/RDBMS.md)
+    - [Interview Preparation Refresher](./database/relational-database/RDBMS.md)
   - Mongo DB
 - Version Control
   - [How to write good commit messages](./version-control/write-good-commit.md)
