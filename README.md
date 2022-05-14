@@ -28,32 +28,32 @@ Covered topics:
 ## STRUCTURE
 
 - HTML
-  - [Form](./general/html-css/html/form.html)
-  - [Element Overview](./general/html-css/html/html-element.md)
-  - [SVG](./general/html-css/html/svg.md)
+  - [Form](./html-css/html/form.html)
+  - [Element Overview](./html-css/html/html-element.md)
+  - [SVG](./html-css/html/svg.md)
 - CSS
-  - [Reset](./general/html-css/css/default-styles.md)
-  - [Units](./general/html-css/css/units.md)
-  - [Positioning](./general/html-css/css/positioning.md)
-  - [Frameworks & Pre-processors](./general/html-css/css/framework-preprocessor.md)
+  - [Reset](./html-css/css/default-styles.md)
+  - [Units](./html-css/css/units.md)
+  - [Positioning](./html-css/css/positioning.md)
+  - [Frameworks & Pre-processors](./html-css/css/framework-preprocessor.md)
 - JavaScript
-  - [How to run JS scripts](./general/javascript/how-to-run.md)
-  - [variable](./general/javascript/variable.md)
-  - [condition](./general/javascript/condition.md)
-  - [function](./general/javascript/function.md)
-  - [array](./general/javascript/array.md)
-  - [object](./general/javascript/object.md)
-  - [call stack](./general/javascript/call-stack.md)
-  - [asynchronous](./general/javascript/asynchronous.md)
+  - [How to run JS scripts](./javascript/how-to-run.md)
+  - [variable](./javascript/variable.md)
+  - [condition](./javascript/condition.md)
+  - [function](./javascript/function.md)
+  - [array](./javascript/array.md)
+  - [object](./javascript/object.md)
+  - [call stack](./javascript/call-stack.md)
+  - [asynchronous](./javascript/asynchronous.md)
 - `Node.js`
-  - [code example of http module](./general/node-js/http.js)
+  - [code example of http module](./node-js/http.js)
 - `Express.js`
 - `Three.js`
 - Database
-  - [Relational Database](./general/database/relational-database/RDBMS.md)
+  - [Relational Database](./database/relational-database/RDBMS.md)
 - Version Control
-  - [How to write good commit messages](./general/version-control/write-good-commit.md)
-  - [Git Fork and Branch Workflow](./general/version-control/fork-n-branch.md)
+  - [How to write good commit messages](./version-control/write-good-commit.md)
+  - [Git Fork and Branch Workflow](./version-control/fork-n-branch.md)
 - Cheat Sheets
   - [CSS](./cheat-sheet/css.pdf)
   - [Flexbox](./cheat-sheet/flexbox.png)
