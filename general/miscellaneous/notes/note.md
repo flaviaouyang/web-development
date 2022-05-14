@@ -1,31 +1,5 @@
 # General Notes
 
-## How to Run JavaScript Code
-
-- run via browser
-
-  - simplest way: create an HTML file with JS code inside
-
-  ```html
-  <!DOCTYPE html>
-  <html lang="en">
-    <head>
-      <meta charset="UTF-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>JS 101</title>
-    </head>
-    <body>
-      <script>
-        // js code goes here
-        console.log("Hello world!");
-      </script>
-    </body>
-  </html>
-  ```
-
-- run from command line: `node filename.js`
-
 ## Variables
 
 - create a variable: `var foo`, `let moo`, `const poo!`
