@@ -35,6 +35,7 @@ Covered topics:
   - [Units](./html-css/css/units.md)
   - [Positioning](./html-css/css/positioning.md)
   - [Frameworks & Pre-processors](./html-css/css/framework-preprocessor.md)
+  - [Grid](./html-css/css/grid.md)
 - JavaScript
   - [How to run JS scripts](./javascript/how-to-run.md)
   - [Variable](./javascript/variable.md)
