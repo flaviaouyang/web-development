@@ -55,6 +55,8 @@ Covered topics:
 - `Three.js`
 - React
   - [`create-react-app`, JSX, components, and `props`](./react/introduction.md)
+  - [component state](./react/component-state.md)
+  - [event handler](./react/event-handler.md)
 - Database
   - Relational Database
     - [Interview Preparation Refresher](./database/relational-database/RDBMS.md)
