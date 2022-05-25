@@ -9,6 +9,8 @@ different learning platforms.
 
 Covered topics:
 
+- Fundamentals
+  - HTTP
 - HTML
 - CSS
 - Javascript
@@ -26,6 +28,8 @@ Covered topics:
 
 ## STRUCTURE
 
+- Fundamentals
+  - [HTTP](./fundamentals/http.md)
 - HTML
   - [Element Overview](./html-css/html/html-element.md)
   - [Form](./html-css/html/form.html)
