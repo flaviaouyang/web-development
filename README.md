@@ -54,6 +54,7 @@ Covered topics:
 - `Express.js`
 - `Three.js`
 - React
+  - [JS Refresher](./react/reintroduction-to-js.md)
   - [Set up React](./react/add-react.md)
   - [`create-react-app`, JSX, components, and `props`](./react/introduction.md)
   - [component state](./react/component-state.md)
