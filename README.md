@@ -54,6 +54,7 @@ Covered topics:
 - `Express.js`
 - `Three.js`
 - React
+  - [Set up React](./react/add-react.md)
   - [`create-react-app`, JSX, components, and `props`](./react/introduction.md)
   - [component state](./react/component-state.md)
   - [event handling](./react/event-handling.md)
